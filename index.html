@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sealine</title>
+  <!-- normalize file -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- bootstarp file -->
+  <link rel="stylesheet" href="SASS/bootstrap5/bootstrap.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- hombepage sytlesheet -->
+  <link rel="stylesheet" href="SASS/homepage.css">
+</head>
+<body>
+  <!-- Start Header -->
+  <div class="main-screen">    
+    <nav class="navbar navbar-expand-lg bg-light" >
+      <div class="container-fluid">
+        <a class="navbar-brand" style="order: 2;" href="#">
+          <img src="images/logo-default-208x46.png" alt="Brand">
+        </a>
+        <button class="navbar-toggler btn-outline-none" type="button" style="order: 1;" data-bs-toggle="collapse" data-bs-target="#header" aria-controls="header" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="order: 4;" id="header">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 pb-md-2 rounded-bottom pt-md-2 fs-3 gap-3 d-md-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Typography</a>
+            </li>
+          </ul>
+          <button class="btn main-button rounded-pill d-none d-lg-block" type="submit">BOOK A TOUR NOW</button>
+        </div>
+        <ul class="d-lg-none d-md-flex flex-column gap-1" style="order: 3;">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Header -->
+    <!-- Start Slider -->
+    <div id="imageSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item bg-dark active">
+          <img src="/images/swiper-slide-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <div class="left">
+              <div class="d-flex justify-content-center align-items-center gap-1 mt-1 mb-1">
+                <i class="fa-solid fa-water"></i>
+                <h3 class="fw-bold">THE TRIP OF YOUR DREAM</h3>
+              </div>
+              <p class="fw-light text-white-50">We offer a variety of destinations to travel to, ranging from exotic to some extreme ones. They include very popular countries and cities like Paris, Rio de Janeiro, Cairo and a lot of others.</p>
+              <button class="btn secondry-button rounded-pill  m-auto" type="submit">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/swiper-slide-2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <div class="left">
+              <div class="d-flex justify-content-center align-items-center gap-1 mt-1 mb-1">
+                <i class="fa-solid fa-water"></i>
+                <h3 class="fw-bold">THE TRIP OF YOUR DREAM</h3>
+              </div>
+              <p class="fw-light ">Our travel agency is ready to offer you an exciting vacation that is designed to fit your own needs and wishes. Whether it’s an exotic cruise or a trip to your favorite resort, you will surely have the best experience.</p>
+              <button class="btn secondry-button rounded-pill  m-auto" type="submit">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img src="/images/swiper-slide-3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <div class="left">
+              <div class="d-flex justify-content-center align-items-center gap-1 mt-1 mb-1">
+                <i class="fa-solid fa-water"></i>
+                <h3 class="fw-bold">THE TRIP OF YOUR DREAM</h3>
+              </div>
+              <p class="fw-light">Our team is ready to provide you with unique weekly travel insights that include photos, videos, and articles about untravelled tourist paths. We know everything about the places you’ve never been to!</p>
+              <button class="btn secondry-button rounded-pill  m-auto" type="submit">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Slider -->
+  <!-- Start Tours -->
+  <div class="tours py-5">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="wave">
+        <h3>OUR BEST TOURS</h3>
+        <i class="fa-solid fa-water"></i>
+      </div>
+      <button class="btn main-button rounded-pill d-block" type="submit">VIEW ALL TOURS</button>
+    </div>
+  </div>
+  <!-- End Tours -->
+  <!-- Start Prices -->
+  <div class="prices pt-5 pb-5">
+    <div class="container-fluid">
+      <div class="row ps-4 pe-4 mb-5">
+        <div class="col-md-6 col-xl-4">
+          <div class="card position-relative" style="width: 100%;">
+            <img class="card-img-top" src="images/landing-private-airlines-01.jpg" alt="landing-1">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title">France, Paris</h5>
+              <span>280$</span>
+              <a href="#" class="btn main-button rounded-pill">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="card position-relative" style="width: 100%;">
+            <img class="card-img-top" src="images/landing-private-airlines-02.jpg" alt="landing-1">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title">USA, Boston</h5>
+              <span>480$</span>
+              <a href="#" class="btn main-button rounded-pill">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="card position-relative" style="width: 100%;">
+            <img class="card-img-top" src="images/landing-private-airlines-03.jpg" alt="landing-1">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title">Italy, Venice</h5>
+              <span>370$</span>
+              <a href="#" class="btn main-button rounded-pill">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="card position-relative" style="width: 100%;">
+            <img class="card-img-top" src="images/landing-private-airlines-04.jpg" alt="landing-1">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title">Spain, Benidorm</h5>
+              <span>360$</span>
+              <a href="#" class="btn main-button rounded-pill">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4" style="order: 2;">
+          <div class="card position-relative" style="width: 100%;">
+            <img class="card-img-top" src="images/landing-private-airlines-05.jpg" alt="landing-1">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title">Egypt, Sharm El Sheikh</h5>
+              <span>520$</span>
+              <a href="#" class="btn main-button rounded-pill">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4" style="order: 1;">
+          <div class="card position-relative" style="width: 100%;">
+            <img class="card-img-top" src="images/landing-private-airlines-06.jpg" alt="landing-1">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <h5 class="card-title">UK, London</h5>
+              <span>600$</span>
+              <a href="#" class="btn main-button rounded-pill">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 w-50 mt-3 mb-3 m-auto" style="order: 100;">
+          <label class="ps-2 pb-2" for="order-price">Choose a order type:</label>
+          <select class="form-select" id="order-price" aria-label="Default select example">
+            <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="1">increasingly</option>
+            <option value="2">Decreasingly</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Prices -->
+  <!-- Start Our Serviecs -->
+  <div class="services pt-5 pb-5">
+    <div class="container-fluid pb-5">
+      <div class="main-title">
+        <h3>OUR Serviecs</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xl-3 my-3 d-flex justify-content-center align-items-center">
+          <div class="card py-4 px-3" style="width: 22rem;">
+            <div class="card-body mb-4">
+              <i class="fa-solid fa-plane fs-1"></i>
+              <h5 class="card-title mb-4">Card title</h5>
+              <hr class="text-muted">
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 my-3 d-flex justify-content-center align-items-center">
+          <div class="card py-4 px-3" style="width: 22rem;">
+            <div class="card-body mb-4">
+              <i class="fa-regular fa-map fs-1"></i>
+              <h5 class="card-title mb-4">Card title</h5>
+              <hr class="text-muted">
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 my-3 d-flex justify-content-center align-items-center">
+          <div class="card py-4 px-3" style="width: 22rem;">
+            <div class="card-body mb-4">
+              <i class="fa-solid fa-hotel fs-1"></i>
+              <h5 class="card-title mb-4">Card title</h5>
+              <hr class="text-muted">
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 my-3 d-flex justify-content-center align-items-center">
+          <div class="card py-4 px-3" style="width: 22rem;">
+            <div class="card-body mb-4">
+              <i class="fa-solid fa-umbrella-beach fs-1"></i>
+              <h5 class="card-title mb-4">Card title</h5>
+              <hr class="text-muted">
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Our Serviecs -->
+  <!-- Start News -->
+  <div class="news">
+    <div class="container-fluid py-5">
+      <section class="py-5">
+        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 100%;">
+            <img class="card-img-top" src="images/news-1.jpg" alt="landing-1">
+            <div class="card-body">
+              <div class="head-card d-flex justify-content-between align-items-center">
+                <a href="#" class="btn main-button rounded-pill">LEARN MORE</a>
+                <p>by <a href="#"><span>Ronald Chen</span></a></p>
+              </div>
+              <h5 class="card-title my-4 ">Your Personal Guide to 5 Best Places to Visit on Earth</h5>
+              <hr>
+              <div class="footer-card d-flex justify-content-between align-items-center">
+                <p class="text-black-50">Feb 27, 2019 at 6:53 pm</p>
+                <i class="text-black-50 fa-solid fa-message"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 100%;">
+            <img class="card-img-top" src="images/news-2.jpg" alt="landing-1">
+            <div class="card-body">
+              <div class="head-card d-flex justify-content-between align-items-center">
+                <a href="#" class="btn main-button rounded-pill">LEARN MORE</a>
+                <p>by <a href="#"><span>Ronald Chen</span></a></p>
+              </div>
+              <h5 class="card-title my-4 ">Your Personal Guide to 5 Best Places to Visit on Earth</h5>
+              <hr>
+              <div class="footer-card d-flex justify-content-between align-items-center">
+                <p class="text-black-50">Feb 27, 2019 at 6:53 pm</p>
+                <i class="text-black-50 fa-solid fa-message"></i>
+              </div>
+            </div>
+          </div>        
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+          <div class="card position-relative" style="width: 100%;">
+            <img class="card-img-top" src="images/news-3.jpg" alt="landing-1">
+            <div class="card-body">
+              <div class="head-card d-flex justify-content-between align-items-center">
+                <a href="#" class="btn main-button rounded-pill">LEARN MORE</a>
+                <p>by <a href="#"><span>Ronald Chen</span></a></p>
+              </div>
+              <h5 class="card-title my-4 ">Your Personal Guide to 5 Best Places to Visit on Earth</h5>
+              <hr>
+              <div class="footer-card d-flex justify-content-between align-items-center">
+                <p class="text-black-50">Feb 27, 2019 at 6:53 pm</p>
+                <i class="text-black-50 fa-solid fa-message"></i>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </section>
+      <ul class="bullets">
+        <li class="active"></li>
+        <li></li>
+        <li class="d-block d-lg-none"></li>
+      </ul>
+      <div class="d-flex">
+        <a href="#" class="my-5 mx-auto py-3 px-4 fs-5 btn main-button rounded-pill me-auto">View all blog posts</a>
+      </div>
+    </div>
+  </div>
+  <!-- End News -->
+  <!-- Start Footer -->
+  <div class="footer pt-5">
+    <div class="container-fluid">
+      <div class="head-text flex-md-column flex-lg-row d-flex justify-content-between align-items-center">
+        <div class="left-side">
+          <h3>BUY A TOUR WITHOUT LEAVING YOUR HOME</h3>
+          <p class="fs-5 my-4">Using our website, you can book any tour just in a couple of clicks.</p>
+        </div>
+        <button class="btn secondry-button rounded-pill  ms-auto ms-md-0" type="submit">Book now</button>
+      </div>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 mt-3 border-top">
+        <img src="images/logo-inverse.png" alt="Brand">
+        <p>© 2022 All Rights Reserved. Design by <span>TemplateMonster</span></p>
+        <ul class="nav col-md-4 justify-content-end">
+          <li>
+            <a class="d-block text-light" href="#"
+              ><i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i
+            ></a>
+          </li>
+          <li>
+            <a class="d-block text-light" href="#"
+              ><i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i
+            ></a>
+          </li>
+          <li>
+            <a class="d-block text-light" href="#"
+              ><i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i
+            ></a>
+          </li>
+          <li>
+            <a class="d-block text-light" href="#"
+              ><i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+  <span class="up">UP</span>
+  <!-- End Footer -->
+  <!-- Scripts -->
+  <script src="/JS/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/e7de92dcc4.js" crossorigin="anonymous"></script>
+  <script src="/JS/homepage.js"></script>
+</body>
+</html>

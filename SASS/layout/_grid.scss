@@ -1,0 +1,50 @@
+* {
+  @include prefixer(box-sizing, border-box, webkit moz);
+  font-family: 'Lato', sans-serif;
+}
+.containers {
+  width: 100%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+.clearfix {
+  clear: both;
+}
+p,h3 {
+  margin: 0;
+}
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.translate-0 {
+  transform: translateX(0);
+}
+.translate-10 {
+  transform: translateX(-10%);
+}
+.up {
+  position: fixed;
+  bottom: 1rem;
+  right: -4rem;
+  background-color: $orangeColor;
+  color: white;
+  font: {
+    weight: bold;
+    size: 1.5rem;
+  }
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: $mainTransition;
+  @media (max-width: $maxMobile) {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+}
+.up.show {
+  right: 1rem;
+}

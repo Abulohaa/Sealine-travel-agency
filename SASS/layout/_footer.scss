@@ -1,0 +1,76 @@
+// Start Footer
+.footer {
+  color: white;
+  background-color: $blackColor;
+  .head-text {
+    flex-wrap: wrap;
+    h3 {
+      color: $orangeColor;
+      @media (max-width: $maxMobile) {
+        text-align: center;
+        font-size: 1.25rem;
+      }
+    }
+    p {
+      font-weight: lighter;
+      @media (max-width: $maxMobile) {
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+    .btn {
+      @media (max-width: $maxMobile) {
+        margin-right: auto;
+      }
+    }
+  }
+  footer {
+    @media (max-width: $maxMobile) {
+      flex-direction: column;
+    }
+    p {
+      @media (max-width: $maxMobile) {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        // font-size: 1.25rem;
+      }
+      span {
+        cursor: pointer;
+        transition: $mainTransition;
+        &:hover {
+          color: $orangeColor;
+        }
+      }
+    }
+    ul {
+      width: fit-content !important;
+      li {
+        i {
+          transition: $mainTransition;
+        }
+        &:nth-child(1) i{
+          &:hover {
+            color: #1877f2;
+          }
+        }
+        &:nth-child(2) i{
+          &:hover {
+            color: #1da1f2;
+          }
+        }
+        &:nth-child(3) i{
+          &:hover {
+            color: #ff0000;
+          }
+        }
+        &:nth-child(4) i{
+          &:hover {
+            color: #0a66c2;
+          }
+        }
+      }
+    }
+  }
+}
+// End Footer

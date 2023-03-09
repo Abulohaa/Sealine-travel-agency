@@ -1,0 +1,56 @@
+// @import "../helpers/variables";
+
+%style-button {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media (max-width: $maxMedium) {
+    font-size: 1rem;
+  }
+}
+.main-button {
+  min-width: 200px;
+  background-color: $orangeColor;
+  @extend %style-button;
+  &:hover {
+    background-color: $blueColor;
+    color: white;
+  }
+}
+.btn {
+  @media (max-width: $maxMedium) {
+    font-size: 1.1rem;
+  }
+}
+.secondry-button {
+  background-color: transparent;
+  min-width: 150px;
+  font-size: 1rem;
+  @extend %style-button;
+  outline: 1px solid white;
+  &:hover {
+    background-color: $orangeColor;
+    color: white;
+    outline: none;
+  }
+}
+.about-button {
+  background-color: transparent;
+  min-width: 150px;
+  font: {
+    size: 1.5rem;
+    weight: 400;
+  }
+  letter-spacing: -0.1rem;
+  @extend %style-button;
+  border: 0.1rem solid $greyColor;
+  color: $blackColor;
+  &:hover {
+    background-color: $purpleColor;
+    color: white;
+    outline: none;
+  }
+}
